@@ -1,0 +1,227 @@
+:root {
+    --primary-color: black;
+    --transparent-black: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-color: black;
+    background: url(images/local.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* border: 2px solid blue; */
+}
+
+/* label{
+    float: right;
+} */
+
+.nav {
+    width: 100%;
+    /* height: 20vh; */
+    /* padding: 0 2px; */
+    height: 11vh;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s ease-in;
+    position: sticky;
+    z-index: 1;
+}
+
+/* .nav-container{ */
+
+/* background-color: red; */
+
+/* height: 4vh; */
+
+/* width: 90%; */
+
+/* display: flex; */
+
+/* justify-content: space-between;
+   margin: 0 auto;  */
+
+/* } */
+
+.nav-container {
+    /* border: 2px solid red; */
+    width: 50%;
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* margin-left: auto; */
+}
+
+.nav-container li a {
+    color: #fff;
+    text-decoration: none;
+    width: 95px;
+    font-size: 17px;
+    transition: linear, 500ms;
+}
+
+.sticky {
+    background-color: rgba(49, 55, 61, 0.918);
+}
+
+.nav-container li a:hover {
+    color: rgb(192, 192, 165);
+}
+
+.nav-container li {
+    width: 90px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+}
+
+.background-content {
+    color: rgb(241, 241, 211);
+    /* border: 2px solid wheat; */
+}
+
+.background-content>h1 {
+    font-size: 2.3rem;
+    margin-top: 70px;
+    min-width: 500px;
+    max-width: 900px;
+    /* margin-top: ; */
+}
+
+.background-content>p {
+    font-size: 1.3rem;
+    margin-top: 35px;
+    min-width: 500px;
+    max-width: 700px;
+}
+
+.btn-learn-more {
+    margin-top: 70px;
+    padding: 22px 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 27px;
+    font-size: 17px;
+    font-weight: bolder;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+    /* box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) ; */
+    /* box-shadow: aquamarine; */
+    transition: .3s ease-in-out;
+}
+.btn-learn-more:focus{
+  outline: none;
+}
+
+.btn-learn-more:hover {
+    box-shadow: 0 1px 10px rgba(255, 255, 255, .3);
+   
+}
+
+.btn-learn-more a {
+    color: rgb(241, 241, 211);
+}
+
+.news-letter {
+    margin-top: 89px;
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 184px;
+}
+
+.form {
+    /* margin-top: 20px; */
+    width: 100%;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.form .form-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form input {
+    /* margin-top: auto; */
+    width: 40%;
+    padding: 12px 10px;
+    font-size: 1.1rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid transparent;
+    color: rgb(64, 73, 82);
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.form button {
+    padding: 12px 10px;
+    font-size: 1.1em;
+    width: 25%;
+    background-color: #ef8b17;
+    border: 1px solid transparent;
+    color: rgb(241, 241, 211);
+    margin-left: -0.3%;
+    font-family: Verdana, Geneva, sans-serif;
+    white-space: nowrap;
+}
+
+.form button:focus {
+    outline: none;
+}
+
+.advert {
+    /* margin-top: 20px; */
+    width: 100%;
+    /* border: 2px solid green; */
+    height: 70px;
+    background: #191c1f;
+}
+
+.wrapper-container {
+    height: 1000px;
+    width: 100%;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section {
+    height: 1000px;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.section2 {
+    height: 1000px;
+    width: 100%;
+    border: 2px solid rgb(22, 22, 27);
+}
+
+@media(max-width: 760px) {
+    nav {
+        display: none;
+    }
+}
